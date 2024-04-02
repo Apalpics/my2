@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+ // intro to the code 
+System.out.println("this calculates  the coeff of friction ");
+// asking for the user to input the values
+Scanner input = new Scanner(System.in);
+System.out.println("Please enter the force in newtons")    ;
+double force = input.nextDouble();
+System.out.println("Please enter the mass in Kg");
+double mass = input.nextDouble();
+System.out.println("Please enter the acceleration in m/s^2"); 
+double acceleration = input.nextDouble();
+// calculating using the formula 
+  double  coeff = (force - mass * acceleration) / (mass * 9.8) ;
+    // outputing the resualts 
+System.out.println("The coeff of friction is " + coeff);
+  
+  }
+
+}
